@@ -1,3 +1,6 @@
+/* Name: Diya Singh Mavi
+   Student No.: 991709323
+*/
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
@@ -12,7 +15,7 @@ package ice1;
  * This code is to be used in ICE1. When you create your own branch,
  * add your name as a modifier.
  *
- * @author Megha Patel,2023
+ * @author Diya Singh Mavi,2023
  */
 public class Card {
     private String suit; //clubs, spades, diamonds, hearts
