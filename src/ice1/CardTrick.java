@@ -28,8 +28,6 @@ public class CardTrick {
             c.setValue((int) (Math.random() * 13) + 1);
             c.setSuit(Card.SUITS[(int) (Math.random() * 4)]);
             magicHand[i] = c;
-            //c.setValue(insert call to random number generator here)
-            //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
         }
         
         Scanner scanner = new Scanner(System.in);
@@ -66,9 +64,6 @@ public class CardTrick {
             System.out.println("Congratulations! You found the lucky card!");
         } else {
             System.out.println("The lucky card is not your card.");}
-        //insert code to ask the user for Card value and suit, create their card
-        // and search magicHand here
-        //Then report the result here
     }
 
 }
