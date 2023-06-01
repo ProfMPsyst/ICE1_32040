@@ -34,10 +34,11 @@ public class CardTrick {
            
         }
         
-        Card luckyNumber= new Carrd();
+        Card luckyNumber= new Card();
         luckyNumber.setValue(10);
-        luckyNumber.setSuite("Hearts");
+        luckyNumber.setSuit("Hearts");
         
+       
        Scanner s = new Scanner(System.in);
         System.out.print("Enter the value of the card from 1 to 13): ");
         int value = s.nextInt();
@@ -64,7 +65,12 @@ public class CardTrick {
             System.out.println("Your card is not in list.");
         }
 
-            
+             if (luckyNumber.equals(selected)) {
+            System.out.println("You win");
+        } else {
+            System.out.println("You lost.");
+             }
+
            
   
             //c.setValue(insert call to random number generator here)
