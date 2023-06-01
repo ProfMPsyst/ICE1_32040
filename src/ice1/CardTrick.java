@@ -36,7 +36,7 @@ public class CardTrick {
             System.out.println("pick any card");
       
         // and search magicHand here
-        /Hard coding luckyCard in the git repository
+        //Hard coding luckyCard in the git repository
         Card luckyCard = new Card();
         luckyCard.setValue(7); //7 of Diamonds
         luckyCard.setSuit(Card.SUITS[1]);
