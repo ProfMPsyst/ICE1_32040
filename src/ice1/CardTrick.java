@@ -54,7 +54,7 @@ public class CardTrick {
                 break;
             }
         }
-
+// New comment
         if (foundMatch) {
             System.out.println("Congratulations! Your card is in the magic hand.");
         } else {
