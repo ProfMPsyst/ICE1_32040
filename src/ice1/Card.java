@@ -13,6 +13,8 @@ package ice1;
  * add your name as a modifier.
  *
  * @author Megha Patel,2023
+ * @modifier Rayhan Valiyani,1 Jun,2023
+ * Student Number: 991703701
  */
 public class Card {
     private String suit; //clubs, spades, diamonds, hearts
