@@ -5,6 +5,8 @@
 
 package ice1;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -34,32 +36,35 @@ public class CardTrick {
             //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
             int SUITs = random.nextInt(4);
             c.setSuit(Card.SUITS[SUITs]);
-            
-        List<String> magicHand = new ArrayList<>();
-        magicHand.add("Ace of Spades");
-        magicHand.add("King of Hearts");
-        magicHand.add("Queen of Diamonds");
-        magicHand.add("Jack of Clubs");
-
         }
         
         Scanner scanner = new Scanner(System.in);
         
         //insert code to ask the user for Card value and suit, create their card
-        System.out.print("Enter the card value: ");
-        String value = scanner.nextLine();
-
-        System.out.print("Enter the card suit: ");
-        String suit = scanner.nextLine();
+          System.out.print("Enter the card value: ");
+           int value = scanner.nextInt();
+           scanner.nextLine();
+        
+         System.out.print("Enter the card suit: ");
+         String suit = scanner.nextLine();
+        
+        Card userCard = new Card();
+        userCard.setValue(value);
+        userCard.setSuit(suit);
 
         // and search magicHand here
-         String userCard = value + " of " + suit;
-        
+          boolean found = false;
+        for (Card card : magicHand) {
+            if (card.equals(userCard)) {
+                found = true;
+                break;
+            }
+        }
         //Then report the result here
-       if (magicHand.contains(userCard)) {
+        if (found) {
             System.out.println("Your card is in the magic hand!");
         } else {
-            System.out.println("Sorry, your card is not in the magic hand.");
+            System.out.println("Sorry, your card is not in the magic hand.");    
         }
     }
 }
