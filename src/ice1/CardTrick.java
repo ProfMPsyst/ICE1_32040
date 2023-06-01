@@ -37,12 +37,6 @@ public class CardTrick {
             //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
         }
         
-        
-        
-        for (int i = 0; i < magicHand.length; i++) {
-            System.out.println(magicHand[i].getValue() + " "+ magicHand[i].getSuit());
-        }
-        
         System.out.println("Please pick a card");
         
         
