@@ -10,6 +10,8 @@ package ice1;
  * for the match to the user's card. To be used as starting code in ICE 1
  *
  * @author Megha Patel,2023
+   @modifier Ayantoye saheed 
+ * Student number 991699828
  */
 import java.util.Arrays;
 public class CardTrick {
@@ -34,6 +36,29 @@ public class CardTrick {
             System.out.println("pick any card");
       
         // and search magicHand here
+        /Hard coding luckyCard in the git repository
+        Card luckyCard = new Card();
+        luckyCard.setValue(7); //7 of Diamonds
+        luckyCard.setSuit(Card.SUITS[1]);
+        
+        // and search magicHand here
+        
+        boolean foundMatch=false;
+        for (int i = 0; i < magicHand.length; i++)
+        {
+            if (magicHand[i].equals(luckyCard))
+            {
+            foundMatch = true;
+            break;
+            }
+        }
+        
+        //Then report the result here
+        
+        if(foundMatch)
+            System.out.println("Your card is in the magic hand!");
+        else
+            System.out.println("Your card is not in the magic hand");
         //Then report the result here
     
 
