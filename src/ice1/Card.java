@@ -13,6 +13,7 @@ package ice1;
  * add your name as a modifier.
  *
  * @author Megha Patel,2023
+ *  @ modifier Arshdeep kaur, 991683798
  */
 public class Card {
     private String suit; //clubs, spades, diamonds, hearts
