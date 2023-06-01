@@ -58,6 +58,7 @@ public class CardTrick {
         System.out.println("Magic Hand Cards:");
         for (Card card : magicHand) {
             System.out.println(card.getValue() + " of " + card.getSuit());
+            System.out.println("lucky card is 7 of diamond");
         }        
     }    
 }
