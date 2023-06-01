@@ -37,6 +37,29 @@ public class CardTrick {
         System.out.println("pick any card");
         // and search magicHand here
         //Then report the result here
+        //Hard coding luckyCard in the git repository
+        Card luckyCard = new Card();
+        luckyCard.setValue(7); //7 of Diamonds
+        luckyCard.setSuit(Card.SUITS[1]);
+        
+        // and search magicHand here
+        
+        boolean foundMatch=false;
+        for (int i = 0; i < magicHand.length; i++)
+        {
+            if (magicHand[i].equals(luckyCard))
+            {
+            foundMatch = true;
+            break;
+            }
+        }
+        
+        //Then report the result here
+        
+        if(foundMatch)
+            System.out.println("Your card is in the magic hand!");
+        else
+            System.out.println("Your card is not in the magic hand");
     }
 
 }
