@@ -29,7 +29,7 @@ public class CardTrick {
             //c.setValue(insert call to random number generator here)
             //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
         }
-        
+        // Hello
         Card luckyCard = new Card();
         luckyCard.setValue(7); 
         luckyCard.setSuit("Hearts");  // new changes 
