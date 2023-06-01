@@ -34,7 +34,11 @@ public class CardTrick {
            
         }
         
-        Scanner s = new Scanner(System.in);
+        Card luckyNumber= new Carrd();
+        luckyNumber.setValue(10);
+        luckyNumber.setSuite("Hearts");
+        
+       Scanner s = new Scanner(System.in);
         System.out.print("Enter the value of the card from 1 to 13): ");
         int value = s.nextInt();
         s.nextLine();
