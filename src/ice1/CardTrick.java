@@ -38,7 +38,7 @@ public class CardTrick {
             magicHand[i].setSuit(Card.SUITS[suit]);
         }
         
-        System.out.print("Enter Suite - \"Hearts\", \"Diamonds\", \"Spades\", \"Clubs\": ");
+        /*System.out.print("Enter Suite - \"Hearts\", \"Diamonds\", \"Spades\", \"Clubs\": ");
         String suite = s.nextLine();
         
         System.out.print("Enter card value: ");
@@ -48,7 +48,13 @@ public class CardTrick {
             if (magicHand[i].getValue() == value && magicHand[i].getSuit() == suite.toLowerCase()) {
                 System.out.println("Congrats you guessed correctly");
                 break;
-            }
+            } */
+        
+        for (int i = 0; i < magicHand.length; i++) {
+            if (magicHand[i].getValue() == luckyCard.getValue && magicHand[i].getSuit() == luckyCard.getSuit)
+                System.out.println("Congrats you guessed correctly");
+        }
+        
         }
         
     }
