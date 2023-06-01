@@ -44,8 +44,24 @@ public class CardTrick {
         luckyCard.setValue(1);
         luckyCard.setSuit(Card.SUITS[4]);
         
-        // and search magicHand here
+// and search magicHand here
+        
+        boolean foundMatch=false;
+        for (int i = 0; i < magicHand.length; i++)
+        {
+            if (magicHand[i].equals(luckyCard))
+            {
+            foundMatch = true;
+            break;
+            }
+        }
+        
         //Then report the result here
+        
+        if(foundMatch)
+            System.out.println("Your card is in the magic hand!");
+        else
+            System.out.println("Your card is not in the magic hand");
     }
 
 }
