@@ -60,6 +60,12 @@ public class CardTrick {
         } else {
             System.out.println("Sorry! Your card is not in the magic hand.");
         }
+        
+        if (luckyCard.equals(userCard)) {
+            System.out.println("You found the lucky card!");
+        } else {
+            System.out.println("The lucky card is not your chosen card.");
+        }
     }
 }
         //insert code to ask the user for Card value and suit, create their card
