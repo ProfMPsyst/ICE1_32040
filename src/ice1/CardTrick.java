@@ -30,6 +30,11 @@ public class CardTrick {
             //c.setValue(insert call to random number generator here
             c.setSuit(Card.SUITS[(int) (Math.random() * 4)]);magicHand[i] = c;
         }
+        
+        Card luckyCard = new Card();
+        luckyCard.setValue(10);
+        luckyCard.setSuit("Hearts");
+        
         //insert code to ask the user for Card value and suit, create their card
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the value of your card (1-13): ");
@@ -57,6 +62,12 @@ public class CardTrick {
             System.out.println("Congratulations, Your card is in the magic hand!");
         } else {
             System.out.println("Unfortunately, Your card is not in the magic hand. Better Luck Nect Time");
+        }
+        
+        if (luckyCard.equals(userCard)) {
+            System.out.println("Congratulations! You have the lucky card!");
+        } else {
+            System.out.println("Sorry, you don't have the lucky card.");
         }
     }
 }
