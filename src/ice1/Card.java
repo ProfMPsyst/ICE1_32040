@@ -13,6 +13,7 @@ package ice1;
  * add your name as a modifier.
  *
  * @author Megha Patel,2023
+ * @modifier Ayantoye saheed 991699828
  */
 public class Card {
     private String suit; //clubs, spades, diamonds, hearts
@@ -47,6 +48,5 @@ public class Card {
         this.value = value;
     }
    
-   
-
 }
+
