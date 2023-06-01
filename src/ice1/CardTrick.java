@@ -45,9 +45,10 @@ public class CardTrick {
         Random a = new Random();
         return a.nextInt(y - x + 1) + x; 
         }
-    if (luckyCard.equals(magicHand)) {
+    if (luckyCard.equals(magicHand) {
             System.out.println("You found the lucky card!");
-        } else {
+        } 
+    else {
             System.out.println("The lucky card is not your chosen card.");
         }
         //Then report the result here
