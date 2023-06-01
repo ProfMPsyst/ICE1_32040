@@ -14,7 +14,6 @@ package ice1;
  * id: 991698575
  */
 import java.util.Random;
-import java.util.Scanner;
 
 public class CardTrick {
 
@@ -24,7 +23,6 @@ public class CardTrick {
     public static void main(String[] args) {
         Card[] magicHand = new Card[7];
         Random rand = new Random();
-        Scanner input = new Scanner(System.in);
         
         
         for(int i=0; i<magicHand.length; i++)
