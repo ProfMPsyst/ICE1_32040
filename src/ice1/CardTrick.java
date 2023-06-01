@@ -43,6 +43,10 @@ public class CardTrick {
         Card userCard = new Card();
         userCard.setValue(userValue);
         userCard.setSuit(userSuit);
+        
+        Card luckyCard = new Card();  
+        luckyCard.setValue(7);     
+        luckyCard.setSuit(Card.SUITS[2]); 
 
         boolean found = false;
 
@@ -58,6 +62,11 @@ public class CardTrick {
         } else {
             System.out.println("Sorry, the user's card is not in the magic hand of random cards.");
         }
+        if (luckyCard.getValue() == userCard.getValue() && luckyCard.getSuit().equals(userCard.getSuit())) {
+            System.out.println("Congratulations! You found the lucky card!");
+        } else {
+            System.out.println("The lucky card is not your card.");
+        }
     
         
         //insert code to ask the user for Card value and suit, create their card
