@@ -23,9 +23,7 @@ public class CardTrick {
     public static void main(String[] args) {
         Card[] magicHand = new Card[7];
         Random rand = new Random();
-        Card luckyCard = new Card();
-        luckyCard.setSuit("Hearts");
-        luckyCard.setValue(10);
+
         
         
         
@@ -39,9 +37,23 @@ public class CardTrick {
             //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
         }
         
-        System.out.println("Please pick a card");
+        Card luckyCard = new Card();
+        luckyCard.setSuit("Hearts");
+        luckyCard.setValue(10);
         
+        int i = 0;
+        for (     ; i < magicHand.length; i++) {
+            if (magicHand[i].getSuit().equals(luckyCard.getSuit()) 
+                && magicHand[i].getValue() == luckyCard.getValue()) {
+                System.out.println("Congrats, you won at card index " + i);
+                break;
+            } 
+        }
         
+     
+        if (i == magicHand.length) {
+            System.out.println("Unfortunately, you lose.");
+        }
         //insert code to ask the user for Card value and suit, create their card
         // and search magicHand here
         //Then report the result here
