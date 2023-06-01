@@ -25,7 +25,7 @@ public class CardTrick {
         {
             Card c = new Card();
             c.setValue((int) (Math.random()*13)+1);
-            c.setValue(Card.SUITS[(int)(Math.random()*4)]);
+            c.setSuit(Card.SUITS[(int)(Math.random()*4)]);
             magicHand[i] = c;
             //c.setValue(insert call to random number generator here)
             //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
@@ -36,9 +36,24 @@ public class CardTrick {
         //Hard coding lucky card
         Card luckyCard = new Card();
         luckyCard.setValue(6);
-        luckyCard.setSuits(Card.SUITS[4]);
+        luckyCard.setSuit(Card.SUITS[4]);
         // and search magicHand here
+       boolean foundMatch=false;
+        for(int i = 0; i < magicHand.length; i++)
+        {
+            if (magicHand[i].equals(luckyCard))
+            {
+            foundMatch = true;
+            break;
+            }
+        }
+        
         //Then report the result here
+        
+        if(foundMatch)
+            System.out.println("Congrts! You guessed it correct");
+        else
+            System.out.println("No! You guessed it wrong");
     }
 
 }
