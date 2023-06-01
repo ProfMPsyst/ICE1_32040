@@ -32,7 +32,7 @@ public class CardTrick {
         
         Card luckyCard = new Card();
         luckyCard.setValue(7); 
-        luckyCard.setSuit("Hearts");
+        luckyCard.setSuit("Hearts");  // new changes 
         
         
         Scanner scanner = new Scanner(System.in);
