@@ -5,7 +5,6 @@
 
 package ice1;
 
-import java.io.ByteArrayInputStream;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -25,6 +24,11 @@ public class CardTrick {
         Card[] magicHand = new Card[7];
         Random random = new Random();
         Scanner s = new Scanner(System.in);
+        
+        // hard coding luckycard card object
+        Card luckyCard = new Card();
+        luckyCard.setValue = 5;
+        luckyCard.setSuit = "hearts"
 
         for (int i = 0; i < magicHand.length; i++) {
             magicHand[i] = new Card();
