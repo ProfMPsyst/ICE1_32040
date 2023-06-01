@@ -38,23 +38,23 @@ public class CardTrick {
         int userCardValue = (int) (Math.random() * 13) + 1;
         int userCardSuit = (int) (Math.random() * 4);
 
-        Card userCard = new Card();
-        userCard.setValue(userCardValue);
-        userCard.setSuit(Card.SUITS[userCardSuit]);
+        Card luckyCard = new Card();
+        luckyCard.setValue(3);
+        luckyCard.setSuit("Spade");
 
         boolean searchMatch = false;
 
         for (Card card : magicHand) {
-            if (card.getValue() == userCard.getValue() && card.getSuit().equalsIgnoreCase(userCard.getSuit())) {
+            if (luckycard.getValue() == luckyCard.getValue() && luckycard.getSuit().equalsIgnoreCase(userCard.getSuit())) {
                 searchMatch = true;
                 break;
             }
         }
 
         if (searchMatch) {
-            System.out.println("Wow! Your chosen card was found in the magic hand.");
+            System.out.println("Wow! The lucky card found .");
         } else {
-            System.out.println("Unfortunately,Your chosen card was not found in the magic hand.");
+            System.out.println("Unfortunately,The lucky card was not found.");
         }
     }
 
