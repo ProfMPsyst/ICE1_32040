@@ -29,10 +29,9 @@ public class CardTrick {
             //c.setValue(insert call to random number generator here)
             //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
         }
-        
          System.out.println("magic hand:");
         for (Card card : magicHand) {
-            System.out.println(card.getValue(20) + " & " + card.getSuit(2));
+            System.out.println(card.getValue() + " & " + card.getSuit());
             //insert code to ask the user for Card value and suit, create their card
         // and search magicHand here
         }
@@ -45,6 +44,11 @@ public class CardTrick {
     private static int generateRandomNumber(int x, int y) {
         Random a = new Random();
         return a.nextInt(y - x + 1) + x; 
+        }
+    if (luckyCard.equals(magicHand)) {
+            System.out.println("You found the lucky card!");
+        } else {
+            System.out.println("The lucky card is not your chosen card.");
         }
         //Then report the result here
     }
