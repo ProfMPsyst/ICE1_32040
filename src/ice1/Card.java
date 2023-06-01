@@ -1,8 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
 package ice1;
 
 /**A class that models playing card Objects. Cards have 
@@ -12,7 +7,8 @@ package ice1;
  * This code is to be used in ICE1. When you create your own branch,
  * add your name as a modifier.
  *
- * @author Megha Patel,2023
+ * Modifier: Laksh Kundnani
+ * Student ID: 991703921
  */
 public class Card {
     private String suit; //clubs, spades, diamonds, hearts
