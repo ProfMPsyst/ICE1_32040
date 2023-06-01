@@ -29,6 +29,12 @@ public class CardTrick {
             //c.setValue(insert call to random number generator here)
             //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
         }
+        
+        Card luckyCard = new Card();
+        luckyCard.setValue(7); 
+        luckyCard.setSuit("Hearts");
+        
+        
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the value of the card you want to pick (1-13): ");
         int value = scanner.nextInt();
