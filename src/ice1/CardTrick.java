@@ -33,11 +33,12 @@ public class CardTrick {
             c.setValue(random.nextInt(13) + 1);
             c.setSuit(Card.SUITS[random.nextInt(4)]);
             magicHand[i] = c;
-            //c.setValue(insert call to random number generator here)
-            //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
         }
         
         Scanner scanner = new Scanner(System.in);
+        Card luckyCard= new card();
+        luckyCard.setValue=5;
+        luckyCard.setSuit="hearts";
         System.out.print("Pick a card (enter the value of your card - 1 to 13): ");
         int userValue = scanner.nextInt();
         scanner.nextLine(); // Consume the newline character
@@ -61,9 +62,7 @@ public class CardTrick {
         } else {
             System.out.println("Sorry! Your card is not in the magic hand.");
         }
-        //insert code to ask the user for Card value and suit, create their card
-        // and search magicHand here
-        //Then report the result here
+        
     }
 
 }
