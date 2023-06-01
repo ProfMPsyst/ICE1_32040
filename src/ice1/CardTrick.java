@@ -10,7 +10,11 @@ package ice1;
  * for the match to the user's card. To be used as starting code in ICE 1
  *
  * @author Megha Patel,2023
+ * @author Prabhpreet Kaur 01 June,2023
+ * Student id: 991716241
  */
+
+import java.util.*;
 public class CardTrick {
 
     /**
@@ -18,15 +22,18 @@ public class CardTrick {
      */
     public static void main(String[] args) {
         Card[] magicHand = new Card[7];
+        Scanner input = new Scanner (System.in);
         
         for(int i=0; i<magicHand.length; i++)
         {
             Card c = new Card();
-            //c.setValue(insert call to random number generator here)
-            //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
+            c.setValue((int) (Math.random()*(13) + 1));
+            c.setSuit(Card.SUITS[(int) (Math.random()*(4))]);
         }
         
         //insert code to ask the user for Card value and suit, create their card
+        System.out.print("Pick a card (any card): ");
+        int num = input.nextInt();
         // and search magicHand here
         //Then report the result here
     }
