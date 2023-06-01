@@ -10,6 +10,7 @@ package ice1;
  * for the match to the user's card. To be used as starting code in ICE 1
  *
  * @author Megha Patel,2023
+ * @modifier: Vuong Quoc Nguyen,2023
  */
 public class CardTrick {
 
