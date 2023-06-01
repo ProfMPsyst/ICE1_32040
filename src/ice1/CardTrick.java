@@ -65,10 +65,7 @@ public class CardTrick {
         if (luckyCard.getValue() == userCard.getValue() && luckyCard.getSuit().equals(userCard.getSuit())) {
             System.out.println("Congratulations! You found the lucky card!");
         } else {
-            System.out.println("The lucky card is not your card.");
-        }
-    
-        
+            System.out.println("The lucky card is not your card.");}
         //insert code to ask the user for Card value and suit, create their card
         // and search magicHand here
         //Then report the result here
