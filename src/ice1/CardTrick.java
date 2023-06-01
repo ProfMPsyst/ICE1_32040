@@ -35,6 +35,12 @@ public class CardTrick {
             //c.setValue(insert call to random number generator here)
             //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
         }
+     
+      // Hardcoded luckyCard
+        Card luckyCard = new Card();
+        luckyCard.setValue(7);
+        luckyCard.setSuit(Card.SUITS[2]);
+
         
          // Ask the user for card value and suit
         
@@ -80,5 +86,10 @@ public class CardTrick {
         //Then report the result here
     }
 
+ if (luckyCard.equals(userCard)) {
+            System.out.println("Congratulations! You have found the lucky card!");
+        } else {
+            System.out.println("Sorry, your card is not the lucky card.");
+        }
 
 
