@@ -32,7 +32,7 @@ public class CardTrick {
         
          System.out.println("magic hand:");
         for (Card card : magicHand) {
-            System.out.println(card.getValue() + " & " + card.getSuit());
+            System.out.println(card.getValue(20) + " & " + card.getSuit(2));
             //insert code to ask the user for Card value and suit, create their card
         // and search magicHand here
         }
