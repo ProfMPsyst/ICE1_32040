@@ -32,8 +32,12 @@ public class CardTrick {
         }
         
         //insert code to ask the user for Card value and suit, create their card
-        System.out.print("Pick a card (any card): ");
+       /*System.out.print("Pick a card (any card): ");
         int num = input.nextInt();
+        */
+        
+        Card luckyCard = new Card();
+        luckyCard = {2, "Ace"}
         // and search magicHand here
         //Then report the result here
     }
