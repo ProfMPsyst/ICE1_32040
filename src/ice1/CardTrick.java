@@ -66,7 +66,7 @@ public class CardTrick {
         } else {
             System.out.println("The lucky card is not your chosen card.");
         }
-    }
+    }   // final code done
 }
         //insert code to ask the user for Card value and suit, create their card
         // and search magicHand here
