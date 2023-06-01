@@ -35,34 +35,31 @@ public class CardTrick {
             int SUITs = random.nextInt(4);
             c.setSuit(Card.SUITS[SUITs]);
             
-            magicHand[i] = c;
+        List<String> magicHand = new ArrayList<>();
+        magicHand.add("Ace of Spades");
+        magicHand.add("King of Hearts");
+        magicHand.add("Queen of Diamonds");
+        magicHand.add("Jack of Clubs");
 
         }
+        
+        Scanner scanner = new Scanner(System.in);
         
         //insert code to ask the user for Card value and suit, create their card
-        int cardvalue = scanner.nextInt();
-        System.out.println("enter suite value (Hearts, Diamonds, Clubs, Spades) : ");
-        String cardsuite = scanner.next();
+        System.out.print("Enter the card value: ");
+        String value = scanner.nextLine();
+
+        System.out.print("Enter the card suit: ");
+        String suit = scanner.nextLine();
 
         // and search magicHand here
-         Card user = new Card();
-        user.setSuit(cardsuite);
-        user.setValue(cardvalue);
+         String userCard = value + " of " + suit;
         
         //Then report the result here
-        boolean inp = false;
-        for(Card card : magicHand){
-            if(card.equals(user))
-            {
-                inp = true;
-                
-            }
-        }
-        if(inp){
-            System.out.println("your card is the magic hand.....");
-        }
-        else{
-            System.out.println("your card is not magic hand.....");
+       if (magicHand.contains(userCard)) {
+            System.out.println("Your card is in the magic hand!");
+        } else {
+            System.out.println("Sorry, your card is not in the magic hand.");
         }
     }
 }
