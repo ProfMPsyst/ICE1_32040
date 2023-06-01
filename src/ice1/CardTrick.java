@@ -36,18 +36,20 @@ public class CardTrick {
         //insert code to ask the user for Card value and suit, create their card
        
           System.out.print("Pick any card: ");
-        
-        
+       
+         //Hard coding luckyCard in the git repository
+        Card luckyCard = new Card();
+        luckyCard.setValue(7); 
+        luckyCard.setSuit(Card.SUITS[3]);
         
         // and search magicHand here
         
        
-        
-        //Then report the result here
-        
+        // Then report the result here
         
     }
 }
+
 
 
 
