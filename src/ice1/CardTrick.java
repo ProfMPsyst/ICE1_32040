@@ -20,9 +20,9 @@ public class CardTrick {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Card[] magicHand = new Card[7];
+        Card[] magicHand = new Card[8];
         
-        for(int i=0; i<magicHand.length; i++)
+        for(int i=0; i<magicHand.length -1; i++)
         {
             Card c = new Card();
             Random rand = new Random();
@@ -30,10 +30,14 @@ public class CardTrick {
             c.setSuit(Card.SUITS[rand.nextInt(4)]); 
             magicHand[i] = c;
         }
+        Card luckyCard = new Card();
+        luckyCard.setValue(5); 
+        luckyCard.setSuit("Clubs"); 
+        magicHand[magicHand.length - 1] = luckyCard;
         Scanner sc = new Scanner (System.in);
         System.out.println("Enter the value of Card");
         int userValue = sc.nextInt();
-        sc.nextLine(); // Consume the newline character
+        sc.nextLine();
         System.out.print("Enter card suit (Hearts, Diamonds, Clubs, Spades): ");
         String userSuit = sc.nextLine();
         //c.setValue(insert call to random number generator here)
