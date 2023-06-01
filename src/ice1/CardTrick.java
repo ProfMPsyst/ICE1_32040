@@ -20,10 +20,6 @@ public class CardTrick {
      */
     public static void main(String[] args) {
         Card[] magicHand = new Card[7];
-        //Hard coding lucky card
-        Card luckyCard = new Card();
-        luckyCard.setValue(6);
-        luckyCard.setSuits(Card.SUITS[4]);
         
         for(int i=0; i<magicHand.length; i++)
         {
@@ -36,6 +32,11 @@ public class CardTrick {
         }
         System.out.println("Pick a card and remember");
         //insert code to ask the user for Card value and suit, create their card
+        
+        //Hard coding lucky card
+        Card luckyCard = new Card();
+        luckyCard.setValue(6);
+        luckyCard.setSuits(Card.SUITS[4]);
         // and search magicHand here
         //Then report the result here
     }
