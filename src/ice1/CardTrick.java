@@ -46,7 +46,7 @@ public class CardTrick {
             System.out.println("Hurrah, Your Card was in the Magic Hand!!!");
         } else {
             System.out.println("Oops, Your Card was not in the Magic Hand!!!");
-        }
+        }  
 
         if (luckyCard.getValue() == userCard.getValue() && luckyCard.getSuit().equalsIgnoreCase(userCard.getSuit())) {
             System.out.println("You also picked the lucky card!");
