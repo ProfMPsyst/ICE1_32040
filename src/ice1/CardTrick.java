@@ -74,6 +74,7 @@ public class CardTrick {
             
         }
     }
+    
         private static int randomNumber() {
         Random random = new Random();
         return random.nextInt(13) + 1; 
@@ -86,10 +87,7 @@ public class CardTrick {
         //Then report the result here
     }
 
- if (luckyCard.equals(userCard)) {
-            System.out.println("Congratulations! You have found the lucky card!");
-        } else {
-            System.out.println("Sorry, your card is not the lucky card.");
-        }
-
+ 
+        
+       
 
