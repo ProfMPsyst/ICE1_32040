@@ -36,15 +36,7 @@ public class CardTrick {
         luckyCard.setSuit("Hearts");
         
         //insert code to ask the user for Card value and suit, create their card
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter the value of your card (1-13): ");
-        int value = scanner.nextInt();
-        scanner.nextLine(); // Consuming the newline character
-
-        System.out.print("Enter the suit of your card (Hearts, Diamonds, Clubs, Spades): ");
-        String suit = scanner.nextLine();
-        // and search magicHand here
-        
+       
         Card userCard = new Card();
         userCard.setValue(value);
         userCard.setSuit(suit);
